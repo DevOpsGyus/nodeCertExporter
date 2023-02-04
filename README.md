@@ -76,7 +76,8 @@ To install the Node Cert Exporter, follow these steps:
 ## Grafana Dashboard
 * [nodeCertExporter](https://grafana.com/dashboards/) dashboard hosted at [grafana.com](https://grafana.com).
 
-![grafanaDashboard](./screenshot/nodeCertExporter.jpg?raw=true "nodeCertExporter")
+![nodeCertExporter ](https://user-images.githubusercontent.com/55613373/216787334-5735b869-820a-42d9-9259-662aa00e8e49.jpg)
+
 #
 ## Contributions
 * Contributions are welcome! If you have any suggestions or bug reports, please open an issue on the GitHub repository.
