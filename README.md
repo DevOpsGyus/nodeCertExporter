@@ -9,7 +9,13 @@
 
 * Retrieve SSL/TLS certificate information all directories.
 * Export certificates to nodeCertExpoter.
+#
+## Requirements
+* Docker
+* Docker Compose
 
+ 
+#
 ## Usage
 To install the Node Cert Exporter, follow these steps:
 
@@ -17,23 +23,63 @@ To install the Node Cert Exporter, follow these steps:
     ```
     docker run -p 9117:9117 thedevopsgyus/node-cert-exporter
     ```
+#
 ## Using Docker Compose 
  
  Complete monitoring stack composed of `Prometheus`, `Alertmanager`, `Grafana` , `NodeExporter` and `nodeCertExporter`. 
- 
-  
 
-* ### 
+*    Prometheus: A time-series database and monitoring system. Accessible at http://localhost:9090.
+
+*    Alertmanager: A component of Prometheus that handles alerts and routes them to receivers. Accessible at http://localhost:9093.
+
+*    Grafana: An open-source analytics and data visualization platform. Accessible at http://localhost:3000.
+
+*    NodeExporter: An exporter for Prometheus that exposes hardware and operating system metrics for *NIX systems.
+
+*    nodeCertExporter: An exporter for Prometheus that  metrics.
+
+* Also contain example ca-cert [ `google ca-cert` ] for nodeCertExporter. 
+
+
+1.  Clone the repository:
     ```
-    docker compose up
+    git clone https://github.com/DevOpsGyus/nodeCertExporter.git
     ```
-Also contain example ca-cert [ `google ca-cert` ] for nodeCertExporter. 
+2. Change into the repository directory:
+    ```
+    cd nodeCertExporter
+    ```
+3. Start the services:
+    ```
+    docker-compose up -d
+    ```
+4.   Access Grafana:
+     
+     The Grafana web interface is accessible at http://localhost:3000. The default credentials are admin/admin.
+
+5. Add data sources:
+
+    In Grafana, add a Prometheus data source by going to the "Data Sources" section and clicking on "Add data source". Use http://prometheus:9090 as the URL.
+
+6. Import Dashboards:
+
+    In Grafana, go to the "Dashboards" section and import the desired dashboards.
+ #
+ ## Stopping the services
+
+* To stop the services, run the following command from the repository directory:
+
+    ```
+    docker-compose down
+    ```
+#
 ## Grafana Dashboard
 * [nodeCertExporter](https://grafana.com/dashboards/) dashboard hosted at [grafana.com](https://grafana.com).
 
-![grafanaDashboard](./screenshot/nodeCertExporter.png?raw=true "nodeCertExporter")
+![grafanaDashboard](./screenshot/nodeCertExporter.jpg?raw=true "nodeCertExporter")
+#
 ## Contributions
 * Contributions are welcome! If you have any suggestions or bug reports, please open an issue on the GitHub repository.
-
+#
 ## License
 * `nodeCertExporter` is released under the MIT License.
