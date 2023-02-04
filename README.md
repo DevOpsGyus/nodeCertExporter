@@ -31,7 +31,7 @@ Also contain example ca-cert [ `google ca-cert` ] for nodeCertExporter.
 ## Grafana Dashboard
 * [nodeCertExporter](https://grafana.com/dashboards/) dashboard hosted at [grafana.com](https://grafana.com).
 
-![grafanaDashboard](screenshot/nodeCertExporter.png?raw=true "nodeCertExporter")
+![grafanaDashboard](./screenshot/nodeCertExporter.png?raw=true "nodeCertExporter")
 ## Contributions
 * Contributions are welcome! If you have any suggestions or bug reports, please open an issue on the GitHub repository.
 
