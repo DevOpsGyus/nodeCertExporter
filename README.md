@@ -21,7 +21,7 @@ To install the Node Cert Exporter, follow these steps:
 
 * ### 
     ```
-    docker run -p 9117:9117 thedevopsgyus/node-cert-exporter
+    docker run -p 9117:9117 thedev0psguys/nodecertexporter
     ```
 #
 ## Using Docker Compose 
