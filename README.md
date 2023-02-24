@@ -64,6 +64,8 @@ To install the Node Cert Exporter, follow these steps:
 6. Import Dashboards:
 
     In Grafana, go to the "Dashboards" section and import the desired dashboards.
+
+    * Example dashboards refer to  ` nodeCertExpoter.json `
  #
  ## Stopping the services
 

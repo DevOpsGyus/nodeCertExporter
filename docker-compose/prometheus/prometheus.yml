@@ -64,4 +64,4 @@ scrape_configs:
   - job_name: 'node-cert-exporter'
     scrape_interval: 10s
     static_configs:
-          - targets: ['host.docker.internal:9117']
+          - targets: ['nodeCertExporter:9117']
