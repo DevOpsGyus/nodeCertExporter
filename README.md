@@ -26,7 +26,7 @@ To install the Node Cert Exporter, follow these steps:
 #
 ## Using Docker Compose 
  
- Complete monitoring stack composed of `Prometheus`, `Alertmanager`, `Grafana` , `NodeExporter` and `nodeCertExporter`. 
+ Complete monitoring stack composed of `Prometheus`, `Alertmanager`, `Grafana` , `NodeExporter` , `Mailhog`  and  `nodeCertExporter`. 
 
 *    Prometheus: A time-series database and monitoring system. Accessible at http://localhost:9090.
 
@@ -35,6 +35,8 @@ To install the Node Cert Exporter, follow these steps:
 *    Grafana: An open-source analytics and data visualization platform. Accessible at http://localhost:3000.
 
 *    NodeExporter: An exporter for Prometheus that exposes hardware and operating system metrics for *NIX systems.
+
+*    Mailhog:  A Simple SMTP Server for Alertmanager.
 
 *    nodeCertExporter: An exporter for Prometheus that  metrics.
 
@@ -65,7 +67,7 @@ To install the Node Cert Exporter, follow these steps:
 
     In Grafana, go to the "Dashboards" section and import the desired dashboards.
 
-    * Example dashboards refer to  ` nodeCertExpoter.json `
+    * Example dashboards refer to  ` nodeCertExpoter.json ` under grafana folder.
  #
  ## Stopping the services
 
