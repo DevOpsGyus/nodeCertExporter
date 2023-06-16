@@ -79,7 +79,7 @@ services:
         org.label-schema.group: "monitoring"
   
   node-cert-exporter:
-    image: thedev0psguys/nodecertexporter:0.0.1
+    image: thedev0psguys/nodecertexporter:latest
     container_name: nodeCertExporter
     ports:
       - 9117:9117
